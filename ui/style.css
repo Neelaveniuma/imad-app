@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: grey;
+    background-color: gray;
     margin-top: 75px;
 }
 
@@ -18,8 +18,8 @@ body {
     color:red;
 }
 .mainbox {
-    width:100px;
-    height:350px;
+    width:500px;
+    height:450px;
     font-size:14px;
     display:inline-block;
     background-color: purple;
