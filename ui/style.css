@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
+    background-color: blue;
     margin-top: 75px;
 }
 
@@ -8,8 +8,14 @@ body {
     text-align: center;
 }
 
-.text-big {
-    font-size: 300%;
+.textbox {
+    width:100px;
+    height:150px;
+    font-size:16px;
+    display:inline-block;
+    background-color:yellow;
+    padding:2px;
+    font-family:verdana;
 }
 
 .bold {
