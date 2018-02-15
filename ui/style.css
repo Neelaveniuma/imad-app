@@ -21,9 +21,9 @@ body {
     width:1300px;
     height:500px;
     display:inline-block;
-    outline:red 1px solid;
+    outline:red 3px solid;
 }
-.mainbox {
+.poem {
     width:500px;
     height:300px;
     font-size:18px;
@@ -33,6 +33,8 @@ body {
     font-family:georgia;
     color:red;
     margin-top:10px;
+    outline: pink 2px solid;
+    
 }
 .places{
     width: 200px;
@@ -40,6 +42,7 @@ body {
     display:inline-block;
     vertical-align:top;
     background-color:lightblue;
+    outline: blue 2px solid;
     color:red;
 }
 
