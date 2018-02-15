@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: gray;
+    background-color:lightgreen;
     margin-top: 75px;
 }
 
@@ -15,16 +15,17 @@ body {
     font-family:verdana;
     color:red;
     margin-top:10px;
-    padding:2px;
+    padding:5px;
+    outline: red 2px solid;
 }
 .box{
-    width:1300px;
+    width:1500px;
     height:500px;
     display:inline-block;
     outline:red 3px solid;
 }
 .poem {
-    width:500px;
+    width:350px;
     height:300px;
     font-size:18px;
     display:inline-block;
@@ -33,7 +34,11 @@ body {
     font-family:georgia;
     color:red;
     margin-top:10px;
+    margin-bottom:10px;
+    margin-right:10px;
+    margin-left:10px;
     outline: pink 2px solid;
+    padding:5px;
     
 }
 .places{
@@ -44,6 +49,9 @@ body {
     background-color:lightblue;
     outline: blue 2px solid;
     color:red;
+    padding:2px;
+    margin: 10px;
+    
 }
 
 .img-medium {
