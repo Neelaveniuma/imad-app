@@ -12,7 +12,7 @@ body {
     width:100px;
     height:150px;
     font-size:16px;
-    background-color:green;
+    background-color:yellow;
     font-family:verdana;
     color:red;
     margin-top:10px;
@@ -29,6 +29,6 @@ body {
 }
 
 .img-medium {
-    height: 200px;
+    height: 250px;
 }
 
