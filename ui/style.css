@@ -15,9 +15,14 @@ body {
     font-family:verdana;
     color:red;
     margin-top:10px;
+    padding:2px;
+}
+.box{
+    width:900px;
+    height:300px;
 }
 .mainbox {
-    width:300px;
+    width:400px;
     height:300px;
     font-size:18px;
     display:inline-block;
@@ -25,6 +30,13 @@ body {
     font-family:georgia;
     color:red;
     margin-top:10px;
+}
+.places{
+    width:500 px;
+    height:300px;
+    display:inline-block;
+    background-color:lightblue;
+    color:red;
 }
 
 .img-medium {
