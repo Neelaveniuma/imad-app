@@ -28,15 +28,17 @@ body {
     height:300px;
     font-size:18px;
     display:inline-block;
+    vertical-align:top;
     background-color: purple;
     font-family:georgia;
     color:red;
     margin-top:10px;
 }
 .places{
-    width: 400px;
-    height:300px;
+    width: 200px;
+    height:150px;
     display:inline-block;
+    vertical-align:top;
     background-color:lightblue;
     color:red;
 }
