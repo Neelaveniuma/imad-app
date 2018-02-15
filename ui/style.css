@@ -12,7 +12,7 @@ body {
     width:100px;
     height:150px;
     font-size:16px;
-    background-color: Yellow;
+    background-color:green;
     font-family:verdana;
     color:red;
     margin-top:10px;
@@ -20,7 +20,7 @@ body {
 .mainbox {
     width:300px;
     height:300px;
-    font-size:16px;
+    font-size:18px;
     display:inline-block;
     background-color: purple;
     font-family:georgia;
