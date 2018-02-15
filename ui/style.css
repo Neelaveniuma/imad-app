@@ -20,25 +20,23 @@ body {
 }
 .box{
     width:1500px;
-    height:500px;
+    height:280px;
     display:inline-block;
     outline:red 3px solid;
 }
 .poem {
     width:350px;
-    height:300px;
+    height:250px;
     font-size:18px;
     display:inline-block;
     vertical-align:top;
     background-color: purple;
     font-family:georgia;
     color:red;
-    margin-top:10px;
-    margin-bottom:10px;
-    margin-right:10px;
-    margin-left:10px;
+    margin: 10px;
     outline: pink 2px solid;
-    padding:5px;
+    padding:10px;
+    ;
     
 }
 .places{
@@ -49,9 +47,8 @@ body {
     background-color:lightblue;
     outline: blue 2px solid;
     color:red;
-    padding:2px;
+    padding:10px;
     margin: 10px;
-    
 }
 
 .img-medium {
