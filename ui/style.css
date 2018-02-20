@@ -26,14 +26,15 @@ body {
 }
 .content{
     width:350px;
-    height:340px;
+    height:350px;
     font-size:18px;
     display:inline-block;
     vertical-align:top;
     background-color: purple;
     font-family:georgia;
     color:red;
-    margin: 100px;
+    margin-top:10px;
+    margin-left: 100px;
     outline: pink 2px solid;
     padding:5px;
     ;
