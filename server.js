@@ -10,6 +10,7 @@ var articles = {
             title:'Daffodils | Neelaveni',
             heading:'Article-Daffodils',
             date: 'Feb 20, 2018',
+            image: '<img src="http://cdn0.wideopeneats.com/wp-content/uploads/2017/04/DaffodilsFI.png" alt="Daffodils" style="width:55%" class="img-medium"/> ',
             content: `
                     <p>Daffodils, the flowers symbolizing friendship, are some of the most popular flowers exclusively due to their unmatched beauty. Daffodils belong to the genus Narcissus. <strong>Daffodil flowers have a trumpet-shaped structure set against a star-shaped background.</strong> Often the trumpet is in a contrasting color from the background.The appeal of daffodils lies in their beauty and durability. Their flowers come in a range of colors like yellowand white and have contrasting cups of orange or pink and a variety of shapes and sizes.</p>
                     <p>These easy and reliable spring-flowering bulbs multiply quickly and return to bloom year after year. They are not fussy about soil, will grow in sun or shade and are not bothered by deer and other critters.Though yellow is by far the most common color for daffodils, the flowers also come in white, cream, orange and even pink. </p>
@@ -35,6 +36,7 @@ var articles = {
             title:'Tulips | Neelaveni',
             heading:'Article-Tulips',
             date: 'Feb 20, 2018',
+            image: '<img src="https://www.roadscholar.org//imagevault/publishedmedia/oaxvnetjki12mu53rlwu/22231-netherlands-tulips-windmill-lghoz.jpg" alt="Tulips" style="width:55%" class="img-medium"/>',
             content: `
                     <p><strong>Tulips (Tulipa)</strong>form a genus of spring-blooming.The flowers are usually large, showy and brightly coloured, generally red, yellow, or white. They often have a different coloured blotch at the base of the tepals (petals and sepals, collectively), internally. Because of a degree of variability within the populations, and a long history of cultivation, classification has been complex and controversial.</p>
                         <p>Tulips originally were found in a band stretching from Southern Europe to Central Asia, but since the seventeenth century have become widely naturalised and cultivated (see map). In their natural state they are adapted to steppes and mountainous areas with temperate climates. Flowering in the spring, they become dormant in the summer once the flowers and leaves die back, emerging above ground as a shoot from the underground bulb in early spring. </p>
@@ -76,6 +78,7 @@ var articles = {
              title:'Roses | Neelaveni',
             heading:'Article-Roses',
             date: 'Feb 20, 2018',
+            image:'<img src="https://thumbs.dreamstime.com/b/rose-field-pink-roses-bloom-covered-hill-71519718.jpg" alt="Roses"                  style="width:50%" class="img-medium"/>',
             content: `
                     <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over a hundred species and thousands of cultivars. They form a group of plants that can be erect shrubs, climbing or trailing with stems that are often armed with sharp prickles. Flowers vary in size and shape and are usually large and showy, in colours ranging from white through yellows and reds. Most species are native to Asia, with smaller numbers native to Europe, North America, and northwestern Africa.</p>
                     <p> Species, cultivars and hybrids are all widely grown for their beauty and often are fragrant. Roses have acquired cultural significance in many societies. Rose plants range in size from compact, miniature roses, to climbers that can reach seven meters in height. Different species hybridize easily, and this has been used in the development of the wide range of garden roses.</p>
@@ -121,9 +124,7 @@ var htmlTemplate = `
          <meta name = "viewport" content = "width = device-width, initial-scale = 1"/>
     </head>
     <body>
-        <div class="center">
-            <img src="http://cdn0.wideopeneats.com/wp-content/uploads/2017/04/DaffodilsFI.png" alt="Daffodils" style="width:55%" class="img-medium"/>
-        </div>
+        <div class="center">${image}</div>
         <div><a href="/">Home</a></div>
         <div>
             <h3>${heading}</h3>
