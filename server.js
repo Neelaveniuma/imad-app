@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var articleDaffodils = {
     title:'Daffodils|Neelaveni',
-    heading:'article-daffodils',
+    heading:'Article-daffodils',
     date: 'Feb 20, 2018',
     content: `
             <p>Daffodils, the flowers symbolizing friendship, are some of the most popular flowers exclusively due to their unmatched beauty. Daffodils belong to the genus Narcissus. <strong>Daffodil flowers have a trumpet-shaped structure set against a star-shaped background.</strong> Often the trumpet is in a contrasting color from the background.The appeal of daffodils lies in their beauty and durability. Their flowers come in a range of colors like yellowand white and have contrasting cups of orange or pink and a variety of shapes and sizes.</p>
