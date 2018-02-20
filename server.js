@@ -5,32 +5,107 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleDaffodils = {
-    title:'Daffodils|Neelaveni',
-    heading:'Article-Daffodils',
-    date: 'Feb 20, 2018',
-    content: `
-            <p>Daffodils, the flowers symbolizing friendship, are some of the most popular flowers exclusively due to their unmatched beauty. Daffodils belong to the genus Narcissus. <strong>Daffodil flowers have a trumpet-shaped structure set against a star-shaped background.</strong> Often the trumpet is in a contrasting color from the background.The appeal of daffodils lies in their beauty and durability. Their flowers come in a range of colors like yellowand white and have contrasting cups of orange or pink and a variety of shapes and sizes.</p>
-            <p>These easy and reliable spring-flowering bulbs multiply quickly and return to bloom year after year. They are not fussy about soil, will grow in sun or shade and are not bothered by deer and other critters.Though yellow is by far the most common color for daffodils, the flowers also come in white, cream, orange and even pink. </p>
-        </div>
-        <div class = "box">
-             <div class ="content"><h3>Poem by William Wordsworth</h3>
-                    <p>I wandered lonely as a cloud <br>That floats on high o'er vales and hills, <br>When all at once I saw a crowd, <br>A host, of golden daffodils;<br> Beside the lake, beneath the trees, <br> Fluttering and dancing in the breeze.<br>
-                        Continuous as the stars that shine<br> And twinkle on the Milky Way, <br> They stretch'd in never-ending line <br>
-                        Along the margin of a bay:<br> Ten thousand saw I at a glance,<br> Tossing their heads in sprightly dance.<br>
-                        The waves beside them danced; but they <br> Out-did the sparkling waves in glee:</p>
-             </div>
-             <div class ="places"><h4> Places to Visit </h4>
-                 <ol>
-                     <li>Netherlands</li>
-                     <li>France</li>
-                     <li>Germany</li>
-                     <li>England</li>
-                     <li>USA</li>
-                </ol>
-              </div>`
+var articles = {
+        articleDaffodils: {
+            title:'Daffodils | Neelaveni',
+            heading:'Article-Daffodils',
+            date: 'Feb 20, 2018',
+            content: `
+                    <p>Daffodils, the flowers symbolizing friendship, are some of the most popular flowers exclusively due to their unmatched beauty. Daffodils belong to the genus Narcissus. <strong>Daffodil flowers have a trumpet-shaped structure set against a star-shaped background.</strong> Often the trumpet is in a contrasting color from the background.The appeal of daffodils lies in their beauty and durability. Their flowers come in a range of colors like yellowand white and have contrasting cups of orange or pink and a variety of shapes and sizes.</p>
+                    <p>These easy and reliable spring-flowering bulbs multiply quickly and return to bloom year after year. They are not fussy about soil, will grow in sun or shade and are not bothered by deer and other critters.Though yellow is by far the most common color for daffodils, the flowers also come in white, cream, orange and even pink. </p>
+                    <div class = "box">
+                         <div class ="content"><h3>Poem by William Wordsworth</h3>
+                                <p>I wandered lonely as a cloud <br>That floats on high o'er vales and hills, <br>When all at once I saw a crowd, <br>A host, of golden daffodils;<br> Beside the lake, beneath the trees, <br> Fluttering and dancing in the breeze.<br>
+                                    Continuous as the stars that shine<br> And twinkle on the Milky Way, <br> They stretch'd in never-ending line <br>
+                                    Along the margin of a bay:<br> Ten thousand saw I at a glance,<br> Tossing their heads in sprightly dance.<br>
+                                    The waves beside them danced; but they <br> Out-did the sparkling waves in glee:</p>
+                         </div>
+                         <div class ="places"><h4> Places to Visit </h4>
+                             <ol>
+                                 <li>Netherlands</li>
+                                 <li>France</li>
+                                 <li>Germany</li>
+                                 <li>England</li>
+                                 <li>USA</li>
+                            </ol>
+                        </div>`
+        },
+        
+        articleTulips: {
+            title:'Tulips | Neelaveni',
+            heading:'Article-Tulips',
+            date: 'Feb 20, 2018',
+            content: `
+                    <p><strong>Tulips (Tulipa)</strong>form a genus of spring-blooming.The flowers are usually large, showy and brightly coloured, generally red, yellow, or white. They often have a different coloured blotch at the base of the tepals (petals and sepals, collectively), internally. Because of a degree of variability within the populations, and a long history of cultivation, classification has been complex and controversial.</p>
+                        <p>Tulips originally were found in a band stretching from Southern Europe to Central Asia, but since the seventeenth century have become widely naturalised and cultivated (see map). In their natural state they are adapted to steppes and mountainous areas with temperate climates. Flowering in the spring, they become dormant in the summer once the flowers and leaves die back, emerging above ground as a shoot from the underground bulb in early spring. </p>
+                    <div class = "box">
+                         <div class ="content"><h3>Types of Tulips</h3>
+                                <ol> 
+                                     <li>Standard Tulips</li>
+                                     <li>Double Bloom</li>
+                                     <li>Parrot Tulips</li>
+                                     <li>Fringed Tulips</li>
+                                     <li>Bi-Color Standard Tulips</li>
+                                     <li>Rembrandt</li>
+                                     <li>Fosteriana Tulips</li>
+                                     <li>Kaufmanniana Tulips</li>
+                                     <li>Lily Flowering Tulips</li>
+                                     <li>Viridiflora Tulips</li>
+                                     <li>Darwin Hybrids</li>
+                                     <li> Single Late Tulips</li>
+                                     <li>Greigii Tulips</li>
+                                </ol>
+                         </div>
+                         <div class ="places"><h4> Places to Visit </h4>
+                             <ol>
+                                 <li>Netherlands</li>
+                                 <li>England</li>
+                                 <li>USA</li>
+                                 <li>South korea</li>
+                                 <li>Srinagar, India</li>
+                                 <li>Japan</li>
+                                 <li>Turkey</li>
+                                 <li>Taiwan</li>
+                                 <li>china</li>
+                                 <li>Australia</li>
+                            </ol>
+                          </div>`
+        },
+        
+        articleRoses: {
+             title:'Tulips | Neelaveni',
+            heading:'Article-Tulips',
+            date: 'Feb 20, 2018',
+            content: `
+                    <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over a hundred species and thousands of cultivars. They form a group of plants that can be erect shrubs, climbing or trailing with stems that are often armed with sharp prickles. Flowers vary in size and shape and are usually large and showy, in colours ranging from white through yellows and reds. Most species are native to Asia, with smaller numbers native to Europe, North America, and northwestern Africa.</p>
+                    <p> Species, cultivars and hybrids are all widely grown for their beauty and often are fragrant. Roses have acquired cultural significance in many societies. Rose plants range in size from compact, miniature roses, to climbers that can reach seven meters in height. Different species hybridize easily, and this has been used in the development of the wide range of garden roses.</p>
+                  <div class = "box">
+                     <div class ="content"><h3>Types of Roses</h3>
+                            <ol> 
+                                 <li>Hybrid tea</li>
+                                 <li>Floribunda</li>
+                                 <li>Grandifloras</li>
+                                 <li>Miniature</li>
+                                 <li>Climbers</li>
+                                 <li>Shrub</li>
+                                 <li>Trees</li>
+                                 <li>Rambler</li>
+                                 <li>Pioneer</li>
+                                 <li>Butterfly</li>
+                                 <li>English</li>
+                                 <li> Grandcover</li>
+                             </ol>
+                    </div>
+                    <div class ="places"><h4> Places to Visit </h4>
+                         <ol>
+                             <li>Bulgaria</li>
+                             <li>France</li>
+                             <li>Japan</li>
+                             <li>Australia</li>
+                        </ol>
+                    </div>`
+        }
 };
-
 function createTemplate(data){
     var title = data.title;
     var date = data.date;
