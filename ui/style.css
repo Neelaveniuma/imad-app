@@ -24,7 +24,7 @@ body {
     display:inline-block;
     outline:red 3px solid;
 }
-.poem {
+.content{
     width:350px;
     height:200px;
     font-size:18px;
