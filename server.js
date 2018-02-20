@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-        'article-daffodils': {
+        'article-Daffodils': {
             title:'Daffodils | Neelaveni',
             heading:'Article-Daffodils',
             date: 'Feb 20, 2018',
