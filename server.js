@@ -104,7 +104,7 @@ var articles = {
                              <li>Australia</li>
                         </ol>
                     </div>`
-        }
+        },
 };
 function createTemplate(data){
     var title = data.title;
