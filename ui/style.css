@@ -27,7 +27,7 @@ body {
 .content{
     width:350px;
     height:360px;
-    font-size:16px;
+    font-size:18px;
     display:inline-block;
     vertical-align:top;
     background-color: purple;
@@ -53,6 +53,6 @@ body {
 }
 
 .img-medium {
-    height: 250px;
+    height: 300px;
 }
 
