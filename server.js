@@ -112,6 +112,7 @@ var articles = {
 function createTemplate(data){
     var title = data.title;
     var date = data.date;
+    var image = data.image;
     var heading = data.heading;
     var content = data.content;
 
