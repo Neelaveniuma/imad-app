@@ -145,13 +145,13 @@ app.get('/:articleName', function (req,res){
    res.send(createTemplate (article[articleName]));
 });
 
-app.get('/article-tulips', function (req,res){
+/*app.get('/article-tulips', function (req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-tulips.html'));
 });
 
 app.get('/article-roses', function (req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-roses.html'));
-});
+});*/
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
