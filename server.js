@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-        'article-Daffodils': {
+        'article-daffodils': {
             title:'Daffodils | Neelaveni',
             heading:'Article-Daffodils',
             date: 'Feb 20, 2018',
@@ -73,8 +73,8 @@ var articles = {
         },
         
         'article-roses': {
-             title:'Tulips | Neelaveni',
-            heading:'Article-Tulips',
+             title:'Roses | Neelaveni',
+            heading:'Article-Roses',
             date: 'Feb 20, 2018',
             content: `
                     <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over a hundred species and thousands of cultivars. They form a group of plants that can be erect shrubs, climbing or trailing with stems that are often armed with sharp prickles. Flowers vary in size and shape and are usually large and showy, in colours ranging from white through yellows and reds. Most species are native to Asia, with smaller numbers native to Europe, North America, and northwestern Africa.</p>
