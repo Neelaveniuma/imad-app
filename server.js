@@ -10,15 +10,15 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-daffodils', function (req,res){
-    res.send('Article - Daffodils will be requested and responded')
+    res.send('Article - Daffodils will be requested and responded');
 });
 
 app.get('/article-tulips', function (req,res){
-    res.send('Article - Tulips will be requested and responded')
+    res.send('Article - Tulips will be requested and responded');
 });
 
 app.get('/article-roses', function (req,res){
-    res.send('Article - Roses will be requested and responded')
+    res.send('Article - Roses will be requested and responded');
 });
 
 app.get('/ui/style.css', function (req, res) {
