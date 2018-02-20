@@ -18,7 +18,7 @@ app.get('/article-tulips', function (req,res){
 });
 
 app.get('/article-roses', function (req,res){
-    res.send('Article - Roses will be requested and responded');
+   res.sendFile(path.join(__dirname, 'ui', 'article-roses.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
