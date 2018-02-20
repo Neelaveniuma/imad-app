@@ -10,11 +10,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-daffodils', function (req,res){
-    res.send('Article - Daffodils will be requested and responded');
+   res.sendFile(path.join(__dirname, 'ui', 'article-daffodils.html'));
 });
 
 app.get('/article-tulips', function (req,res){
-    res.send('Article - Tulips will be requested and responded');
+    res.sendFile(path.join(__dirname, 'ui', 'article-tulips.html'));
 });
 
 app.get('/article-roses', function (req,res){
