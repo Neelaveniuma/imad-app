@@ -9,7 +9,7 @@ body {
 }
 
 .textbox {
-    height:150px;
+    height:250px;
     font-size:16px;
     background-color:yellow;
     font-family:verdana;
@@ -20,13 +20,13 @@ body {
 }
 .box{
     width:1500px;
-    height:280px;
+    height:300px;
     display:inline-block;
     outline:red 3px solid;
 }
 .content{
     width:350px;
-    height:200px;
+    height:300px;
     font-size:18px;
     display:inline-block;
     vertical-align:top;
@@ -41,7 +41,7 @@ body {
 }
 .places{
     width: 200px;
-    height:150px;
+    height:250px;
     display:inline-block;
     vertical-align:top;
     background-color:lightblue;
