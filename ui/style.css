@@ -20,13 +20,13 @@ body {
 }
 .box{
     width:1500px;
-    height:330px;
+    height:360px;
     display:inline-block;
     outline:red 3px solid;
 }
 .content{
     width:350px;
-    height:320px;
+    height:330px;
     font-size:18px;
     display:inline-block;
     vertical-align:top;
