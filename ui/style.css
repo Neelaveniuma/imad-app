@@ -17,8 +17,9 @@ body {
     color:red;
     margin-top:10px;
     margin-right:10px;
-    padding-left:5px;
-    padding-right:5px;
+    padding-left:10px;
+    padding-right:10px;
+    padding:5px;
     outline: red 2px solid;
 }
 .box{
@@ -41,6 +42,7 @@ body {
     padding-left:5px;
     padding-right:5px;
     outline: pink 2px solid;
+    padding:5px;
 }
 .places{
     width: 200px;
