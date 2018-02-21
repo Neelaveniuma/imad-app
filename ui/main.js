@@ -10,7 +10,7 @@ var img = document.getElementById('madi');
 var marginLeft = 0;
 function moveRight(){
     marginLeft += 10;
-    img.style.marginLeft = marginLeft+ '500px';
+    img.style.marginLeft = marginLeft+ '50px';
 }
 
 img.onclick = function(){
