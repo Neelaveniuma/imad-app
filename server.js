@@ -110,7 +110,7 @@ var articles = {
         },
 };
 function createTemplate(data){
-   // var title = data.title;
+    var title = data.title;
     var date = data.date;
     var image = data.image;
     var heading = data.heading;
@@ -148,13 +148,6 @@ app.get('/counter', function(req, res){
     res.send(counter.toString());
 });
 
-var names = [];
-app.get('/submit-name', function (req, res){
-    var name= req.query.name;
-    names.push(name);
-    res.send(JSON.stringify(names));
-});
-
 app.get('/:articleName', function (req,res){
     var articleName = req.params.articleName;
    res.send(createTemplate (articles[articleName]));
@@ -178,6 +171,13 @@ app.get('/ui/main.js', function (req, res) {
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+
+var names = [];
+app.get('/submit-name', function (req, res){
+    var name= req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
 });
 
 
