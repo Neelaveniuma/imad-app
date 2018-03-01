@@ -29,9 +29,9 @@ var articles = {
                                  <li>England</li>
                                  <li>USA</li>
                             </ol>
-                        </div>`
-                    <div class ="comment"> 
-                        <input type = "text" id = "comments" placeholder ="comments"> </input>
+                         </div>`
+                    <div class ="commentbox"> 
+                        <input type = "text" id = "comments" placeholder ="comments"></input>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
                     </div>    
         },
@@ -76,7 +76,7 @@ var articles = {
                                  <li>Australia</li>
                             </ol>
                           </div>`
-                    <div class ="comment"> 
+                    <div class ="commentbox"> 
                         <input type = "text" id = "comments" placeholder ="comments"> </input>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
                     </div>       
@@ -115,7 +115,7 @@ var articles = {
                                  <li>Australia</li>
                             </ol>
                         </div>`
-                <div class ="comment"> 
+                <div class ="commentbox"> 
                         <input type = "text" id = "comments" placeholder ="comments"> </input>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
                 </div>         
@@ -127,8 +127,7 @@ function createTemplate(data){
     var image = data.image;
     var heading = data.heading;
     var content = data.content;
-    var comment = data.comment;
-
+    
 var htmlTemplate = `
 <!doctype html>
 <html>
@@ -145,7 +144,6 @@ var htmlTemplate = `
         </div>
         <div>${date}</div>
         <div class="textbox">${content}</div>   
-        <div class ="comment">${comment}</div>
     </body>
 </html>`
 ;
