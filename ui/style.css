@@ -55,6 +55,17 @@ body {
     padding:3px;
     margin: 20px;
 }
+.comment{
+    width: 300px;
+    height:150px;
+    display:inline-block;
+    vertical-align:top;
+    background-color:lightblue;
+    outline: blue 2px solid;
+    color:red;
+    padding:3px;
+    margin: 20px;
+}
 
 .img-medium {
     height: 300px;
