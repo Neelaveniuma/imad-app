@@ -10,13 +10,13 @@ body {
 
 .textbox {
     width:1500px;
-    height:150px;
+    height:160px;
     font-size:17px;
     background-color:yellow;
     font-family:verdana;
     color:red;
     margin-top:10px;
-    padding:10px;
+    padding:5px;
     outline: red 2px solid;
     display:inline-block;
 }
