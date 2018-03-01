@@ -30,6 +30,10 @@ var articles = {
                                  <li>USA</li>
                             </ol>
                         </div>`
+                    <div class ="comment"> 
+                        <input type = "text" id = "comments" placeholder ="comments"> </input>
+                        <input type = "submit" value = "Submit" id ="submit_btn"></input>
+                    </div>    
         },
         
         'article-tulips': {
@@ -72,6 +76,10 @@ var articles = {
                                  <li>Australia</li>
                             </ol>
                           </div>`
+                    <div class ="comment"> 
+                        <input type = "text" id = "comments" placeholder ="comments"> </input>
+                        <input type = "submit" value = "Submit" id ="submit_btn"></input>
+                    </div>       
         },
         
         'article-roses': {
@@ -82,8 +90,8 @@ var articles = {
             content: `
                     <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over a hundred species and thousands of cultivars. They form a group of plants that can be erect shrubs, climbing or trailing with stems that are often armed with sharp prickles. Flowers vary in size and shape and are usually large and showy, in colours ranging from white through yellows and reds. Most species are native to Asia, with smaller numbers native to Europe, North America, and northwestern Africa.</p>
                     <p> Species, cultivars and hybrids are all widely grown for their beauty and often are fragrant. Roses have acquired cultural significance in many societies. Rose plants range in size from compact, miniature roses, to climbers that can reach seven meters in height. Different species hybridize easily, and this has been used in the development of the wide range of garden roses.</p>
-                  <div class = "box">
-                     <div class ="content"><h3>Types of Roses</h3>
+                <div class = "box">
+                        <div class ="content"><h3>Types of Roses</h3>
                             <ol> 
                                  <li>Hybrid tea</li>
                                  <li>Floribunda</li>
@@ -98,15 +106,19 @@ var articles = {
                                  <li>English</li>
                                  <li> Grandcover</li>
                              </ol>
-                    </div>
-                    <div class ="places"><h4> Places to Visit </h4>
-                         <ol>
-                             <li>Bulgaria</li>
-                             <li>France</li>
-                             <li>Japan</li>
-                             <li>Australia</li>
-                        </ol>
-                    </div>`
+                        </div>
+                        <div class ="places"><h4> Places to Visit </h4>
+                            <ol>
+                                 <li>Bulgaria</li>
+                                 <li>France</li>
+                                 <li>Japan</li>
+                                 <li>Australia</li>
+                            </ol>
+                        </div>`
+                <div class ="comment"> 
+                        <input type = "text" id = "comments" placeholder ="comments"> </input>
+                        <input type = "submit" value = "Submit" id ="submit_btn"></input>
+                </div>         
         },
 };
 function createTemplate(data){
@@ -115,6 +127,7 @@ function createTemplate(data){
     var image = data.image;
     var heading = data.heading;
     var content = data.content;
+    var comment = data.comment;
 
 var htmlTemplate = `
 <!doctype html>
@@ -131,7 +144,8 @@ var htmlTemplate = `
             <h3>${heading}</h3>
         </div>
         <div>${date}</div>
-        <div class="textbox">${content}</div>     
+        <div class="textbox">${content}</div>   
+        <div class ="comment">${comment}</div>
     </body>
 </html>`
 ;
