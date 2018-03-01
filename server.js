@@ -51,10 +51,8 @@ var articles = {
                     <div class = "box">
                          <div class ="content"><h3>Types of Tulips</h3>
                                 <ol> 
-                                     <li>Standard Tulips</li>
-                                     <li>Double Bloom</li>
-                                     <li>Parrot Tulips</li>
-                                     <li>Fringed Tulips</li>
+                                     <li>Standard Tulips, Double Bloom</li> 
+                                     <li>Parrot Tulips, Fringed Tulips</li>
                                      <li>Bi-Color Standard Tulips</li>
                                      <li>Rembrandt</li>
                                      <li>Fosteriana Tulips</li>
