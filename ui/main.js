@@ -57,7 +57,7 @@ submit.onclick = function(){
         if(request.readyState === XMLHttpRequest.DONE){
             if(request.status === 200){
                 var comments = request.responseText;
-                comments = JSON.parse(comments);
+               // comments = JSON.parse(comments);
                 var list = '';
                 for(var i = 0; i<comments.length; i++){
                     list += '<li>'+ comments + '</li>';
