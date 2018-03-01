@@ -30,7 +30,7 @@ body {
 }
 .content{
     width:750px;
-    height:350px;
+    height:150px;
     font-size:18px;
     display:inline-block;
     vertical-align:top;
@@ -46,7 +46,7 @@ body {
 }
 .places{
     width: 200px;
-    height:250px;
+    height:260px;
     display:inline-block;
     vertical-align:top;
     background-color:lightblue;
