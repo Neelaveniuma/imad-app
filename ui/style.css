@@ -24,8 +24,7 @@ body {
     width:1500px;
     height:380px;
     display:inline-block;
-    position: absolute;
-    vertical-align:top;
+   vertical-align:top;
     outline:red 3px solid;
 }
 .content{
@@ -60,8 +59,7 @@ body {
 .commentbox{
     width:1500px;
     height:150px;
-    display:inline-block;
-    vertical-align:top;
+ 
 }    
 
 .img-medium {
