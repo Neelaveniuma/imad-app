@@ -183,17 +183,19 @@ app.get('/submit-name', function (req, res){
     res.send(JSON.stringify(names));
 });
 
-app.get('/:articleName', function (req,res){
-    var articleName = req.params.articleName;
-   res.send(createTemplate (articles[articleName]));
-});
-
 var comments = [];
 app.get('/submit-comment', function (req, res){
     var comment= req.query.comment;
     comments.push(comment);
     res.send(JSON.stringify(comments));
 });
+
+app.get('/:articleName', function (req,res){
+    var articleName = req.params.articleName;
+   res.send(createTemplate (articles[articleName]));
+});
+
+
 
 /*app.get('/article-tulips', function (req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-tulips.html'));
