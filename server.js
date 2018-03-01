@@ -167,13 +167,6 @@ app.get('/counter', function(req, res){
     res.send(counter.toString());
 });
 
-var comments = [];
-app.get('/submit-comment', function (req, res){
-    var comments= req.query.comments;
-    comments.push(comment);
-    res.send(JSON.stringify(comments));
-});
-
 var names = [];
 app.get('/submit-name', function (req, res){
     var name= req.query.name;
@@ -184,6 +177,13 @@ app.get('/submit-name', function (req, res){
 app.get('articles/:articleName', function (req,res){
     var articleName = req.params.articleName;
    res.send(createTemplate (articles[articleName]));
+});
+
+var comments = [];
+app.get('/submit-comment', function (req, res){
+    var comments= req.query.comments;
+    comments.push(comment);
+    res.send(JSON.stringify(comments));
 });
 
 /*app.get('/article-tulips', function (req,res){
