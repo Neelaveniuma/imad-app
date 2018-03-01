@@ -32,7 +32,7 @@ var articles = {
                          </div>`,
             comment:`  <br>           
                     <div class ="commentbox"> 
-                        <input type = "text" id = "comment"></input>
+                        <input type = "text" id = "comment" placeholder = "comment"></input>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
                         <ul id ="commentlist">
                         </ul>
@@ -188,11 +188,11 @@ app.get('/:articleName', function (req,res){
    res.send(createTemplate (articles[articleName]));
 });
 
-var comments = [];
+var comments = "";
 app.get('/submit-comment', function (req, res){
     var comments= req.query.comments;
     comments.push(comment);
-    res.send(JSON.stringify(comments));
+    res.send(comments);
 });
 
 /*app.get('/article-tulips', function (req,res){
