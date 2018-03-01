@@ -20,7 +20,7 @@ button.onclick = function(){
 
 //Submit Name
 
-/*var submit = document.getElementById('submit_btn');
+var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
     var request = new XMLHttpRequest();
     request.onreadystatechange= function(){
@@ -42,7 +42,7 @@ submit.onclick = function(){
         request.send(null);
     };    
     
-};*/
+};
 
 
 
