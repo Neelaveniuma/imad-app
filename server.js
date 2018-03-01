@@ -46,7 +46,7 @@ var articles = {
             date: 'Feb 20, 2018',
             image: '<img src="https://www.roadscholar.org//imagevault/publishedmedia/oaxvnetjki12mu53rlwu/22231-netherlands-tulips-windmill-lghoz.jpg" alt="Tulips" style="width:55%" class="img-medium"/>',
             content: `
-                    <p><strong>Tulips (Tulipa)</strong>form a genus of spring-blooming.The flowers are usually large, showy and brightly coloured, generally red, yellow, or white. They often have a different coloured blotch at the base of the tepals (petals and sepals, collectively), internally. Because of a degree of variability within the populations, and a long history of cultivation, classification has been complex and controversial.</p>
+                    <p><strong>Tulips (Tulipa)</strong>form a genus of spring-blooming.The flowers are usually large, showy and brightly coloured, generally red, yellow, or white. They often have a different coloured blotch at the base of the tepals internally. Because of a degree of variability within the populations, and a long history of cultivation, classification has been complex and controversial.</p>
                         <p>Tulips originally were found in a band stretching from Southern Europe to Central Asia. In their natural state they are adapted to steppes and mountainous areas with temperate climates. Flowering in the spring, they become dormant in the summer once the flowers and leaves die back, emerging above ground as a shoot from the underground bulb in early spring. </p>
                     <div class = "box">
                          <div class ="content"><h3>Types of Tulips</h3>
