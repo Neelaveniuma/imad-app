@@ -53,7 +53,8 @@ body {
     outline: blue 2px solid;
     color:red;
     padding:3px;
-    margin: 20px;
+    margin-left: 200px;
+    margin-top:20px;
 }
 .commentbox{
     width:1500px;
