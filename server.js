@@ -98,7 +98,7 @@ var articles = {
             date: 'Feb 20, 2018',
             image:'<img src="https://thumbs.dreamstime.com/b/rose-field-pink-roses-bloom-covered-hill-71519718.jpg" alt="Roses"                  style="width:50%" class="img-medium"/>',
             content: `
-                    <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over a hundred species and thousands of cultivars. They form a group of plants that can be erect shrubs, climbing or trailing with stems that are often armed with sharp prickles. Flowers vary in size and shape and are usually large and showy, in colours ranging from white through yellows and reds. Most species are native to Asia, with smaller numbers native to Europe, North America, and northwestern Africa.</p>
+                    <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over a hundred species. They form a group of plants that can be erect shrubs, climbing or trailing with stems that are often armed with sharp prickles. Flowers vary in size and shape and are usually large and showy, in colours ranging from white through yellows and reds. Most species are native to Asia, with smaller numbers native to Europe, North America, and northwestern Africa.</p>
                     <p> Species, cultivars and hybrids are all widely grown for their beauty and often are fragrant. Roses have acquired cultural significance in many societies. Rose plants range in size from compact, miniature roses, to climbers that can reach seven meters in height. Different species hybridize easily, and this has been used in the development of the wide range of garden roses.</p>
                 <div class = "box">
                         <div class ="content"><h3>Types of Roses</h3>
@@ -125,7 +125,7 @@ var articles = {
                                  <li>Australia</li>
                             </ol>
                         </div>`,
-            comment: `
+            comment: ` <br>
                     <div class ="commentbox"> 
                         <input type = "text" id = "comment" placeholder ="comment"> </input>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
