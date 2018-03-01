@@ -10,7 +10,7 @@ body {
 
 .textbox {
     width:1500px;
-    height:170px;
+    height:150px;
     font-size:16px;
     background-color:yellow;
     font-family:verdana;
@@ -24,6 +24,7 @@ body {
     width:1500px;
     height:380px;
     display:inline-block;
+    vertical-align:top;
     outline:red 3px solid;
 }
 .content{
