@@ -30,7 +30,7 @@ var articles = {
                                  <li>USA</li>
                             </ol>
                          </div>`,
-            comment:`             
+            comment:`  <br>           
                     <div class ="commentbox"> 
                         <input type = "text" id = "comment"></input>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
