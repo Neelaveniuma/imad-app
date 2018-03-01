@@ -48,7 +48,12 @@ submit.onclick = function(){
 };
 
 
-
+var commentInput = document.getElementById('comments');
+var comment = commentsInput.value;
+var submit = document.getElementById('submit-btn');
+submit.onclick = function(){
+    
+}
 
 
 
