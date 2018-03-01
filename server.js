@@ -82,10 +82,10 @@ var articles = {
                           </div>`,
             comment:`   <br>
                           <div class ="commentbox"> 
-                            <input type = "text" id = "comment" placeholder ="comment"> </input>
+                            <textarea name="comment" form="usrform">Enter text here...</textarea>
                             <input type = "submit" value = "Submit" id ="submit_btn"></input>
                             <ul id ="commentlist">
-                            </ul>
+                             </ul>
                           </div> `              
                          
                       
