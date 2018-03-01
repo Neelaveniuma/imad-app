@@ -24,6 +24,7 @@ body {
     width:1500px;
     height:380px;
     display:inline-block;
+    position: absolute;
     vertical-align:top;
     outline:red 3px solid;
 }
