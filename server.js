@@ -32,7 +32,7 @@ var articles = {
                          </div>`,
             comment:`             
                     <div class ="commentbox"> 
-                        <input type = "text" id = "comment" placeholder ="comment"></input>
+                        <input type = "text" id = "comment"></input>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
                         <ul id ="commentlist">
                         </ul>
