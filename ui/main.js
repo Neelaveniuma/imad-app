@@ -71,8 +71,8 @@ submit.onclick = function(){
     var commentInput = document.getElementById('comments');
     var comment = commentInput.value;
     request.open('GET', 'http://neelsvicky.imad.hasura-app.io/submit-comments?comment=' + comment , true);
-     request.send(null);
-}
+    request.send(null);
+};
 
 
 
