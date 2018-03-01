@@ -31,7 +31,7 @@ var articles = {
                             </ol>
                          </div>`
                     <div class ="commentbox"> 
-                        <input type = "text" id = "comments" placeholder ="comments"></input>
+                        <input type = "text" id = "comment" placeholder ="comment"></input>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
                     </div>    
         },
@@ -77,7 +77,7 @@ var articles = {
                             </ol>
                           </div>`
                     <div class ="commentbox"> 
-                        <input type = "text" id = "comments" placeholder ="comments"> </input>
+                        <input type = "text" id = "comment" placeholder ="comment"> </input>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
                     </div>       
         },
@@ -116,7 +116,7 @@ var articles = {
                             </ol>
                         </div>`
                 <div class ="commentbox"> 
-                        <input type = "text" id = "comments" placeholder ="comments"> </input>
+                        <input type = "text" id = "comment" placeholder ="comment"> </input>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
                 </div>         
         },
@@ -159,6 +159,13 @@ var counter =0;
 app.get('/counter', function(req, res){
     counter += 1;
     res.send(counter.toString());
+});
+
+var comments = [];
+app.get('/submit-comment', function (req, res){
+    var comments= req.query.comments;
+    comments.push(comment);
+    res.send(JSON.stringify(comments));
 });
 
 var names = [];
