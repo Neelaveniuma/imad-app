@@ -57,7 +57,7 @@ body {
 }
 .commentbox{
     width:500px;
-    height:350px;
+    height:250px;
     display:inline-block;
     outline:red 3px solid;
     vertical-align:top;
