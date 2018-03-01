@@ -36,12 +36,7 @@ var articles = {
                         <ul id ="commentlist">
                         </ul>
                     </div>   */ 
-                    <div class = "footer">
-                         <input type = "text" id = "name" placeholder ="name"> </input>
-                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
-                         <ul id = "namelist">
-                         </ul>
-                    </div>
+                  
         },
         
         'article-tulips': {
@@ -90,12 +85,7 @@ var articles = {
                         <ul id ="commentlist">
                         </ul>
                     </div>  */
-                    <div class = "footer">
-                         <input type = "text" id = "name" placeholder ="name"> </input>
-                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
-                         <ul id = "namelist">
-                         </ul>
-                    </div>
+                   
         },
         
         'article-roses': {
@@ -137,12 +127,7 @@ var articles = {
                         <ul id ="commentlist">
                         </ul>
                 </div> */ 
-                <div class = "footer">
-                         <input type = "text" id = "name" placeholder ="name"> </input>
-                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
-                         <ul id = "namelist">
-                         </ul>
-                </div>
+               
         },
 };
 function createTemplate(data){
