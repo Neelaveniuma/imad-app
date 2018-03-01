@@ -85,7 +85,7 @@ var articles = {
                             <input type = "text" id = "comment" placeholder = "comment"></input>
                             <input type = "submit" value = "Submit" id ="submit_btn"></input>
                             <ul id ="commentlist">
-                             </ul>
+                            </ul>
                           </div> `              
                          
                       
@@ -190,7 +190,7 @@ app.get('/:articleName', function (req,res){
 
 var comments = [];
 app.get('/submit-comment', function (req, res){
-    var comments= req.query.comments;
+    var comment= req.query.comment;
     comments.push(comment);
     res.send(JSON.stringify(comments));
 });
