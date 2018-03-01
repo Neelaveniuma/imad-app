@@ -51,7 +51,7 @@ var articles = {
                     <div class = "box">
                          <div class ="content"><h3>Types of Tulips</h3>
                                 <ol> 
-                                     <li>Standard Tulips, Double Bloom</li> 
+                                     <li>Standard Tulips,        Double Bloom</li> 
                                      <li>Parrot Tulips, Fringed Tulips</li>
                                      <li>Bi-Color Standard Tulips</li>
                                      <li>Rembrandt</li>
