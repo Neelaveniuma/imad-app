@@ -56,10 +56,12 @@ body {
     margin: 20px;
 }
 .commentbox{
-    width:550px;
+    width:500px;
     height:350px;
     display:inline-block;
     outline:red 3px solid;
+    vertical-align:top;
+}    
 
 .img-medium {
     height: 300px;
