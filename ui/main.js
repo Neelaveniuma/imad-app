@@ -58,12 +58,12 @@ submit.onclick = function(){
             if(request.status === 200){
                 var comments = request.responseText;
                 comments = JSON.parse(comments);
-                var commentlist = '';
+                var list = '';
                 for(var i = 0; i<comments.length; i++){
-                    commentlist += '<li>'+ comments + '</li>';
+                    list += '<li>'+ comments + '</li>';
                 }
                  var ul = document.getElementById('commentlist');
-                 ul.innerHTML = commentlist;
+                 ul.innerHTML = list;
             }
             
         }
