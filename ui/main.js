@@ -49,7 +49,7 @@ submit.onclick = function(){
 
 
 
-/*var submit = document.getElementById('submit-btn');
+var submit = document.getElementById('submit-btn');
 submit.onclick = function(){
     var request = new XMLHttpRequest();
     
@@ -72,7 +72,7 @@ submit.onclick = function(){
     var comment = commentInput.value;
     request.open('GET', 'http://neelsvicky.imad.hasura-app.io/submit-comment?comment=' + comment , true);
     request.send(null);
-};*/
+};
 
 
 
