@@ -179,12 +179,12 @@ app.get('/:articleName', function (req,res){
    res.send(createTemplate (articles[articleName]));
 });
 
-var comments = [];
+/*var comments = [];
 app.get('/submit-comment', function (req, res){
     var comments= req.query.comments;
     comments.push(comment);
     res.send(JSON.stringify(comments));
-});
+});*/
 
 /*app.get('/article-tulips', function (req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-tulips.html'));
