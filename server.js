@@ -79,12 +79,12 @@ var articles = {
                                  <li>Australia</li>
                             </ol>
                           </div>`
-                   /*<div class ="commentbox"> 
-                        <input type = "text" id = "comment" placeholder ="comment"> </input>
-                        <input type = "submit" value = "Submit" id ="submit_btn"></input>
-                        <ul id ="commentlist">
-                        </ul>
-                    </div>  */
+                          <div class ="commentbox"> 
+                                 <input type = "text" id = "name" placeholder ="name"> </input>
+                                 <input type = "submit" value = "Submit" id ="submit_btn"></input>
+                                 <ul id = "namelist">
+                                 </ul>
+                          </div>  
                    
         },
         
