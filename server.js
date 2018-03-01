@@ -29,13 +29,14 @@ var articles = {
                                  <li>England</li>
                                  <li>USA</li>
                             </ol>
-                         </div>`
-                   /* <div class ="commentbox"> 
+                         </div>`,
+            comment:`             
+                    <div class ="commentbox"> 
                         <input type = "text" id = "comment" placeholder ="comment"></input>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
                         <ul id ="commentlist">
                         </ul>
-                    </div>   */ 
+                     </div> `   
                   
         },
         
@@ -78,7 +79,15 @@ var articles = {
                                  <li>china</li>
                                  <li>Australia</li>
                             </ol>
-                          </div>`
+                          </div>`,
+            comment:`
+                    <div class ="commentbox"> 
+                        <input type = "text" id = "comment" placeholder ="comment"> </input>
+                        <input type = "submit" value = "Submit" id ="submit_btn"></input>
+                        <ul id ="commentlist">
+                        </ul>
+                    </div> `              
+                         
                       
                    
         },
@@ -115,13 +124,14 @@ var articles = {
                                  <li>Japan</li>
                                  <li>Australia</li>
                             </ol>
-                        </div>`
-               /*<div class ="commentbox"> 
+                        </div>`,
+            comment: `
+                    <div class ="commentbox"> 
                         <input type = "text" id = "comment" placeholder ="comment"> </input>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
                         <ul id ="commentlist">
                         </ul>
-                </div> */ 
+                     </div> `            
                
         },
 };
@@ -131,7 +141,7 @@ function createTemplate(data){
     var image = data.image;
     var heading = data.heading;
     var content = data.content;
-    
+    var comment = data.comment;
 var htmlTemplate = `
 <!doctype html>
 <html>
@@ -147,7 +157,8 @@ var htmlTemplate = `
             <h3>${heading}</h3>
         </div>
         <div>${date}</div>
-        <div class="textbox">${content}</div>   
+        <div class="textbox">${content}</div> 
+        <div class ="commentbox">${comment}</div>
     </body>
 </html>`
 ;
@@ -177,12 +188,12 @@ app.get('/:articleName', function (req,res){
    res.send(createTemplate (articles[articleName]));
 });
 
-/*var comments = [];
+var comments = [];
 app.get('/submit-comment', function (req, res){
     var comments= req.query.comments;
     comments.push(comment);
     res.send(JSON.stringify(comments));
-});*/
+});
 
 /*app.get('/article-tulips', function (req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-tulips.html'));
