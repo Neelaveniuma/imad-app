@@ -191,6 +191,12 @@ app.get('/test.db',function(req,res){
     
 });
 
+var names = [];
+app.get('/submit-name', function (req, res){
+    var name= req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
+});
 
 var counter =0;
 app.get('/counter', function(req, res){
@@ -199,24 +205,19 @@ app.get('/counter', function(req, res){
 });
 
 
-var names = [];
-app.get('/submit-name', function (req, res){
-    var name= req.query.name;
-    names.push(name);
-    res.send(JSON.stringify(names));
-});
+
 
 app.get('/:articleName', function (req,res){
     var articleName = req.params.articleName;
    res.send(createTemplate (articles[articleName]));
 });
 
-var words = [];
+/*var words = [];
 app.get('/submit-word', function (req, res){
     var word= req.query.word;
     words.push(word);
     res.send(JSON.stringify(words));
-});
+});*/
 
 
 
