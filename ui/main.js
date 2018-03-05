@@ -47,6 +47,31 @@ submit.onclick = function(){
     
 };
 
+//Submit Comment
+
+var submit = document.getElementById('submit_btn');
+
+submit.onclick = function(){
+    
+    var request = new XMLHttpRequest();
+    
+    request.onreadystatechange= function(){
+        if(request.readyState === XMLHttpRequest.DONE){
+            if(request.status === 200){
+                 var words = request.responseText;
+                    words = JSON.parse(words);
+            }
+        }
+    };
+     var wordInput = document.getElementById('word');
+     var word = wordInput.value;
+     request.open('GET', 'http://neelsvicky.imad.hasura-app.io/submit-word?word=' + word , true);
+     request.send(null);
+    
+};
+               
+
+
 
 
 
