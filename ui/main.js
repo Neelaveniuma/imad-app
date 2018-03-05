@@ -48,7 +48,7 @@ submit.onclick = function(){
 
 //Submit Comment
 
-var submit = document.getElementById('submit_btn');
+/*var submit = document.getElementById('submit_btn');
 
 submit.onclick = function(){
     
@@ -63,18 +63,18 @@ submit.onclick = function(){
                     for(var i = 0; i<words.length; i++){
                         para+= '<p>'+ words[i] + '</p>';
                     }
-                    var comment = document.getElementById('para');
-                    comment.innerHTML = para;
+                    var comments = document.getElementById('para');
+                    comments.innerHTML = para;
             }
             
         }
     };
-     var wordInput = document.getElementById('word');
-     var word = wordInput.value;
-     request.open('GET', 'http://neelsvicky.imad.hasura-app.io/submit-word?word=' + word , true);
+     var commentInput = document.getElementById('comment');
+     var comment = commentInput.value;
+     request.open('GET', 'http://neelsvicky.imad.hasura-app.io/submit-comment?comment=' + comment , true);
      request.send(null);
     
-};
+};*/
                
 
 
