@@ -59,7 +59,14 @@ submit.onclick = function(){
             if(request.status === 200){
                  var words = request.responseText;
                     words = JSON.parse(words);
+                    var para = '';
+                    for(var i = 0; i<words.length; i++){
+                        para+= '<p>'+ words[i] + '</p>';
+                    }
+                    var comment = document.getElementById('para');
+                    comment.innerHTML = para;
             }
+            
         }
     };
      var wordInput = document.getElementById('word');
