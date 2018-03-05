@@ -203,7 +203,12 @@ app.get('/submit-name', function (req, res){
     res.send(JSON.stringify(names));
 });
 
-
+var comments = [];
+app.get('/submit-comment', function (req, res){
+    var comment= req.query.comment;
+    comments.push(comment);
+    res.send(JSON.stringify(comments));
+});
 
 
 app.get('/:articleName', function (req,res){
@@ -211,12 +216,7 @@ app.get('/:articleName', function (req,res){
    res.send(createTemplate (articles[articleName]));
 });
 
-var comments = [];
-app.get('/submit-comment', function (req, res){
-    var comment= req.query.comment;
-    comments.push(comment);
-    res.send(JSON.stringify(comments));
-});
+
 
 
 
