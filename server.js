@@ -195,12 +195,6 @@ app.get('/counter', function(req, res){
     counter += 1;
     res.send(counter.toString());
 });
-var comments = [];
-app.get('/submit-comment', function (req, res){
-    var comment= req.query.comment;
-    comments.push(comment);
-    res.send(JSON.stringify(comments));
-});
 
 var names = [];
 app.get('/submit-name', function (req, res){
