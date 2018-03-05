@@ -139,7 +139,7 @@ var articles = {
             comment: ` <br>
                     <div class ="commentbox"> 
                         <form>
-                        <textarea id="words" rows="5" cols="20">Enter comment</textarea>
+                        <textarea id="words" rows="10" cols="20">Enter comment</textarea>
                         <input type="button" onclick="getwords()" value="Enter" /> <br>
                         <p id="para"></p>
                         </form>
