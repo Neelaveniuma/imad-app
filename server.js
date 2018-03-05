@@ -189,7 +189,6 @@ app.get('/test.db',function(req,res){
     
 });
 
-
 var counter =0;
 app.get('/counter', function(req, res){
     counter += 1;
@@ -203,7 +202,7 @@ app.get('/submit-name', function (req, res){
     res.send(JSON.stringify(names));
 });
 
-app.get('/:articleName', function (req,res){
+app.get('/articles:articleName', function (req,res){
     var articleName = req.params.articleName;
    res.send(createTemplate (articles[articleName]));
 });
