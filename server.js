@@ -8,7 +8,7 @@ var config = {
     database: 'neelsvicky',
     host: 'db.imad.hassura-app.io',
     port: '5432',
-    passwrd:process.env.DB_PASSWORD
+    password:process.env.DB_PASSWORD
 };
 
 var app = express();
