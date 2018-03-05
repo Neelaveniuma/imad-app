@@ -48,7 +48,7 @@ submit.onclick = function(){
 
 //Submit Comment
 
-/*var submit = document.getElementById('submit_btn');
+var submit = document.getElementById('submit_btn');
 
 submit.onclick = function(){
     
@@ -67,7 +67,7 @@ submit.onclick = function(){
      request.open('GET', 'http://neelsvicky.imad.hasura-app.io/submit-word?word=' + word , true);
      request.send(null);
     
-};*/
+};
                
 
 
