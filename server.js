@@ -201,7 +201,7 @@ app.get('/submit-comment', function (req, res){
     res.send(JSON.stringify(comments));
 });
 
-var pool = new Pool(config);
+//var pool = new Pool(config);
 console.log("config : "+JSON.stringify(config));
 var pool = new pg.Pool(config);
 app.get('/test-db', function(req,res){
