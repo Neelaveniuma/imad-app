@@ -47,6 +47,12 @@ submit.onclick = function(){
     
 };
 
+function getwords() {
+  text = words.value;
+  document.getElementById("para").innerHTML += '<p>'+text
+  document.getElementById("words").value = "enter"
+}
+
 
 
 var submit = document.getElementById('submit-btn');
