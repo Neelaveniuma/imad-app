@@ -43,7 +43,7 @@ var articles = {
                     <div class ="commentbox"> 
                         <form>
                         <textarea id="words" rows="10" cols="20">Enter comment</textarea>
-                        <input type="button" onclick="getwords()" value="Enter" /> <br>
+                        <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
                         <p id="para"></p>
                         </form>
                      </div> `   
@@ -94,7 +94,7 @@ var articles = {
                           <div class ="commentbox"> 
                             <form>
                             <textarea id="words" rows="10" cols="20">Enter comment</textarea>
-                            <input type="button" onclick="getwords()" value="Enter" /> <br>
+                            <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
                             <p id="para"></p>
                             </form>
                           </div> `              
@@ -140,7 +140,7 @@ var articles = {
                     <div class ="commentbox"> 
                         <form>
                         <textarea id="words" rows="10" cols="20">Enter comment</textarea>
-                        <input type="button" onclick="getwords()" value="Enter" /> <br>
+                        <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
                         <p id="para"></p>
                         </form>
                      </div> `            
