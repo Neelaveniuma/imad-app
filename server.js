@@ -42,7 +42,7 @@ var articles = {
             comment:`  <br>           
                     <div class ="commentbox"> 
                         <textarea id="comment" rows="5" cols="50"></textarea>
-                        <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
+                        <input type = "submit" value = "Submit" id ="submit_btn1"></input> <br>
                         <p id="para"></p>
                     </div> `   
                   
@@ -92,7 +92,7 @@ var articles = {
                           <div class ="commentbox"> 
                             
                             <textarea id="comment" rows="5" cols="50">Comment</textarea>
-                            <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
+                            <input type = "submit" value = "Submit" id ="submit_btn1"></input> <br>
                             <p id="para"></p>
                             
                           </div> `              
@@ -138,7 +138,7 @@ var articles = {
                     <div class ="commentbox"> 
                         
                         <textarea id="comment" rows="5" cols="50"></textarea>
-                        <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
+                        <input type = "submit" value = "Submit" id ="submit_btn1"></input> <br>
                         <p id="para"></p>
                         
                      </div> `            
@@ -211,11 +211,11 @@ app.get('/:articleName', function (req,res){
    res.send(createTemplate (articles[articleName]));
 });
 
-var words = [];
-app.get('/submit-word', function (req, res){
-    var word= req.query.word;
-    words.push(word);
-    res.send(JSON.stringify(words));
+var comments = [];
+app.get('/submit-comment', function (req, res){
+    var comment= req.query.comment;
+    comments.push(comment);
+    res.send(JSON.stringify(comments));
 });
 
 
