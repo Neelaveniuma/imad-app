@@ -41,10 +41,11 @@ var articles = {
                          </div>`,
             comment:`  <br>           
                     <div class ="commentbox"> 
-                         <input type = "text" id = "comment" placeholder = "comment"></input>
-                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
-                            <ul id ="commentlist">
-                            </ul>
+                        <form>
+                        <textarea id="words" rows="10" cols="20">Enter comment</textarea>
+                        <input type="button" onclick="getwords()" value="Enter" /> <br>
+                        <p id="para"></p>
+                        </form>
                      </div> `   
                   
         },
@@ -91,10 +92,11 @@ var articles = {
                           </div>`,
             comment:`   <br>
                           <div class ="commentbox"> 
-                            <input type = "text" id = "comment" placeholder = "comment"></input>
-                            <input type = "submit" value = "Submit" id ="submit_btn"></input>
-                            <ul id ="commentlist">
-                            </ul>
+                            <form>
+                            <textarea id="words" rows="10" cols="20">Enter comment</textarea>
+                            <input type="button" onclick="getwords()" value="Enter" /> <br>
+                            <p id="para"></p>
+                            </form>
                           </div> `              
                          
                       
@@ -136,10 +138,11 @@ var articles = {
                         </div>`,
             comment: ` <br>
                     <div class ="commentbox"> 
-                        <input type = "text" id = "comment" placeholder ="comment"> </input>
-                        <input type = "submit" value = "Submit" id ="submit_btn"></input>
-                        <ul id ="commentlist">
-                        </ul>
+                        <form>
+                        <textarea id="words" rows="10" cols="20">Enter comment</textarea>
+                        <input type="button" onclick="getwords()" value="Enter" /> <br>
+                        <p id="para"></p>
+                        </form>
                      </div> `            
                
         },
