@@ -47,9 +47,8 @@ submit.onclick = function(){
 };
 
 //Submit Comment
-var commentInput = document.getElementById('comment');
-var comment = commentInput.value;
-var submit = document.getElementById('submit_btn');
+
+var submit = document.getElementById('submit_btn1');
 submit.onclick = function(){
     
     var request = new XMLHttpRequest();
@@ -69,7 +68,8 @@ submit.onclick = function(){
             
         }
     };
-     
+     var commentInput = document.getElementById('comment');
+     var comment = commentInput.value;
      request.open('GET', 'http://neelsvicky.imad.hasura-app.io/submit-comment?comment=' + comment , true);
      request.send(null);
     
