@@ -42,7 +42,7 @@ var articles = {
             comment:`  <br>           
                     <div class ="commentbox"> 
                         <form>
-                        <textarea id="words" rows="5" cols="50">Comment</textarea>
+                        <textarea id="word" rows="5" cols="50">Comment</textarea>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
                         <p id="para"></p>
                         </form>
@@ -93,7 +93,7 @@ var articles = {
             comment:`   <br>
                           <div class ="commentbox"> 
                             <form>
-                            <textarea id="words" rows="5" cols="50">Comment</textarea>
+                            <textarea id="word" rows="5" cols="50">Comment</textarea>
                             <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
                             <p id="para"></p>
                             </form>
@@ -139,7 +139,7 @@ var articles = {
             comment: ` <br>
                     <div class ="commentbox"> 
                         <form>
-                        <textarea id="words" rows="5" cols="50">Comment</textarea>
+                        <textarea id="word" rows="5" cols="50">Comment</textarea>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
                         <p id="para"></p>
                         </form>
@@ -211,7 +211,12 @@ app.get('/:articleName', function (req,res){
    res.send(createTemplate (articles[articleName]));
 });
 
-
+var words = [];
+app.get('/submit-word', function (req, res){
+    var word= req.query.word;
+    words.push(word);
+    res.send(JSON.stringify(words));
+});
 
 
 
