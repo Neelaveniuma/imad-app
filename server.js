@@ -202,7 +202,7 @@ app.get('/submit-comment', function (req, res){
 });
 
 //var pool = new Pool(config);
-console.log("config : "+JSON.stringify(config));
+//console.log("config : "+JSON.stringify(config));
 var pool = new pg.Pool(config);
 app.get('/test-db', function(req,res){
 	pool.query('SELECT * FROM test', function(err,result){ 
