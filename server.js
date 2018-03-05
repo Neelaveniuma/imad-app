@@ -41,10 +41,10 @@ var articles = {
                          </div>`,
             comment:`  <br>           
                     <div class ="commentbox"> 
-                        <input type = "text" id = "comment" placeholder = "comment"></input>
-                        <input type = "submit" value = "Submit" id ="submit_btn"></input>
-                        <ul id ="commentlist">
-                        </ul>
+                         <input type = "text" id = "comment" placeholder = "comment"></input>
+                         <input type = "submit" value = "Submit" id ="submit_btn"></input>
+                            <ul id ="commentlist">
+                            </ul>
                      </div> `   
                   
         },
@@ -203,7 +203,7 @@ app.get('/submit-name', function (req, res){
     res.send(JSON.stringify(names));
 });
 
-app.get('article/:articleName', function (req,res){
+app.get('/:articleName', function (req,res){
     var articleName = req.params.articleName;
    res.send(createTemplate (articles[articleName]));
 });
