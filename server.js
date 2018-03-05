@@ -42,7 +42,7 @@ var articles = {
             comment:`  <br>           
                     <div class ="commentbox"> 
                         <form>
-                        <textarea id="word" rows="5" cols="50">Comment</textarea>
+                        <textarea id="comment" rows="5" cols="50"></textarea>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
                         <p id="para"></p>
                         </form>
@@ -93,7 +93,7 @@ var articles = {
             comment:`   <br>
                           <div class ="commentbox"> 
                             <form>
-                            <textarea id="word" rows="5" cols="50">Comment</textarea>
+                            <textarea id="comment" rows="5" cols="50">Comment</textarea>
                             <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
                             <p id="para"></p>
                             </form>
@@ -139,7 +139,7 @@ var articles = {
             comment: ` <br>
                     <div class ="commentbox"> 
                         <form>
-                        <textarea id="word" rows="5" cols="50">Comment</textarea>
+                        <textarea id="comment" rows="5" cols="50"></textarea>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
                         <p id="para"></p>
                         </form>
