@@ -213,12 +213,12 @@ app.get('/:articleName', function (req,res){
    res.send(createTemplate (articles[articleName]));
 });
 
-/*var words = [];
+var words = [];
 app.get('/submit-word', function (req, res){
     var word= req.query.word;
     words.push(word);
     res.send(JSON.stringify(words));
-});*/
+});
 
 
 
