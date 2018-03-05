@@ -41,12 +41,10 @@ var articles = {
                          </div>`,
             comment:`  <br>           
                     <div class ="commentbox"> 
-                        <form>
                         <textarea id="comment" rows="5" cols="50"></textarea>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
                         <p id="para"></p>
-                        </form>
-                     </div> `   
+                    </div> `   
                   
         },
         
@@ -92,11 +90,11 @@ var articles = {
                           </div>`,
             comment:`   <br>
                           <div class ="commentbox"> 
-                            <form>
+                            
                             <textarea id="comment" rows="5" cols="50">Comment</textarea>
                             <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
                             <p id="para"></p>
-                            </form>
+                            
                           </div> `              
                          
                       
@@ -138,11 +136,11 @@ var articles = {
                         </div>`,
             comment: ` <br>
                     <div class ="commentbox"> 
-                        <form>
+                        
                         <textarea id="comment" rows="5" cols="50"></textarea>
                         <input type = "submit" value = "Submit" id ="submit_btn"></input> <br>
                         <p id="para"></p>
-                        </form>
+                        
                      </div> `            
                
         },
