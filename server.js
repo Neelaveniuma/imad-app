@@ -220,9 +220,9 @@ app.post('/login', function(req, res){
                  err.send(403).send('Username /Password is Invalid');
              } else {
                  var dbString = result.rows[0].password;
-                 var salt = dbString.split('$');
-                 var hashPassword = hash(password, salt);
-                 if(hashPassword === dbString){
+                 var salt = dbString.split('$')[2];
+                 var hashedPassword = hash(password, salt);
+                 if(hashedPassword === dbString){
                      res.send('Credentials correct');
                  } else {
                      res.send(403).send('Invalid credentails');
